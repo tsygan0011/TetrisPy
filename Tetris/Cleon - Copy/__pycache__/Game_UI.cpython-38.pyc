@@ -1,0 +1,148 @@
+U
+    za¿W  ã                   @   s<   d Z ddlZddlZddlZdddddœZG dd„ dƒZdS )z8
+
+é    N)ÚeatÚsleepÚmarriageÚcarc                   @   sl   e Zd Zdd„ Zdd„ Zdd„ Zdd„ Zd	d
+„ Zdd„ Zdd„ Z	dd„ Z
+dd„ Zdd„ Zdd„ Zdd„ ZdS )Úgamec                 C   s,   t  ¡ }| d¡ | d¡ | dd¡ |S )NZSingLifeÚ500x700F)ÚtkinterZTkÚtitleÚgeometryZ	resizable)Úselfr   © r   úE\\fileserver\mdec\MiniProject(TeamFolders)\Team Aloy\Cleon\Game_UI.pyÚ
+start_game   s
+    
+
+zgame.start_gamec                    sÈ   t  ˆ ¡atjddd t  t¡‰ˆjddd t jˆddd}|jdd	d
+ t jˆdddd‰ˆjdd	d
+ t jˆddddd}|jdd	d
+ t jˆdd	dd‡ ‡‡‡‡fdd„d}|jdd	d
+ d S )NÚbothT©ÚfillÚexpandÚxzPlease Enter Your Name...©ÚArialé   ©ÚtextÚfontÚcenteré
+   ©ÚanchorÚpadyé   é   )ÚheightÚwidthr   é   zGender: Male)r!   r"   r   r   ZConfirmc                      s   ˆ  ˆˆˆ ˆ¡S ©N)Ústart_stats_windowr   ©r   Úname_TBÚplayerr   Ústart_window_framer   r   Ú<lambda>/   ó    z#game.start_window.<locals>.<lambda>)r!   r"   r   r   Úcommand)r   ÚFrameÚgame_windowÚpackÚLabelZTextÚButton)r   r   r(   Zname_LBLZ
+gender_LBLZ
+submit_BTNr   r&   r   Ústart_window   s    
+
+ÿzgame.start_windowc                    s  |  dd¡ ¡ }| ¡ rˆ d|¡ | ¡  t t¡‰ˆjddd t t¡‰ˆjdddd ˆj	D ]d}ˆ 
+|¡ |dkr´tjˆd	ˆ 
+|¡ ¡  ¡  d
+ dd}|jddd qf|dkr|dkr|dkr|dkrtjˆ| ¡ d ˆ 
+|¡ ¡  dd}|jddd qf|dkrTtjˆd| ¡ d ˆ 
+|¡ ¡  dd}|jddd qf|dkr4tjˆdddd}	|	jddd tj|	|| ¡ d ˆ 
+|¡ ¡  dd}
+|
+jdddd tj|	d |d! ttˆ 
+|¡ƒd" d# ƒd$}|jd%dd& tj|	d'|d( tttˆ 
+|¡ƒd" ƒd" d# ƒd$}|jd)dd& qftjˆd| ddd}	|	jddd tj|	|| ¡ d ˆ 
+|¡ ¡  dd}
+|
+jdddd tj|	d |d* ttˆ 
+|¡ƒd" d# ƒd$}|jdddd qftjˆd+d,d‰ ˆ jd-d. ˆ d/‡ ‡‡‡‡‡fd0d1„¡ d S )2Nz1.0ÚendÚnamer   Tr   Úbottom)r   r   ÚsidezHello z!, welcome to SingLife)r   é   Úboldr   r   r   r   ÚkarmaÚenergyÚhealthÚagez: r   )r4   r   r   Úbar_stats_frameÚgrayi  )r4   Úbgr"   Z10)r   ÚpadxÚwé   )r   r   r@   ÚgreenZbargreenéd   éF   )r?   r4   r"   Úleft)r6   r   ÚredZbarredÚrightZbarúClick anywhere to continue...©r   r   Ús©r   ú
+<Button-1>c                    s   ˆ  ˆˆ ˆˆˆ¡S r$   )Ú	narration©Úe©Úclick_continuer   r(   r   Úwindow_frame_bottomÚwindow_frame_topr   r   r*   x   r+   z)game.start_stats_window.<locals>.<lambda>)ÚgetÚstripÚisalphaÚ	set_valueÚdestroyr   r-   r.   r/   Ú	variablesÚ	get_valuer0   Ú__str__Ú
+capitalizeÚintÚabsÚbind)r   r)   r'   r   r(   r4   ÚiZ	title_LBLZ	stats_LBLr=   Zbar_stats_LBL_textZbar_stats_LBL_leftZbar_stats_LBL_rightZbar_stats_LBLr   rQ   r   r%   2   s€    
+
+
+
+ÿÿşü(ş
+ş
+şÿ ÿş,ÿzgame.start_stats_windowc              	      sb  |  ¡  ˆ   ¡  ˆ d¡ t t¡‰ˆjddd d}tjˆdd|dd	d
+}|jddd t t¡}|jdddddd |j	ddˆ 
+d¡ ¡ d d}	d}
+| |	|
+d |	|
+¡}d}| |	|
+|	| |
+d ¡}| |	|
+|	| |
+d ¡}d}
+| |	|
+|	d |
+d ¡}| |	|
+|	d |
+d ¡}|jddd tjˆd d!d"‰ ˆ jdd# ˆ d‡ ‡‡‡‡‡fd$d%„¡ d S )&NrM   r   Tr   zÃI am born as a Male in Singapore. I am the beautiful creation from the sensational event that my parent had that night. My life starts now......
+
+Disclaimer: This whole story line is frictional. r>   r   ©r   r#   éô  )r?   Zjustifyr   r   Ú	wraplengtr   r   éá   é-   éª   rD   )r   éx   r4   ©r   éÅ   é¯   éK   r    é2   é‘   é   r   rK   r5   )r   r6   rI   rJ   r   rL   c                    s   ˆ  ˆˆ ˆˆˆ¡S r$   )Úmain_game_startrO   ©rR   r   Únarration_framer(   r   rS   r   r   r*   Ÿ   r+   z game.narration.<locals>.<lambda>)rY   Úunbindr   r-   r.   r/   r0   ZCanvasZcreate_ovalZcreate_textr[   r]   Zcreate_liner`   )r   rT   rR   r   rS   r(   Znarrative_textZnarration_frame_LBLZcanvasr   ÚyZstickZdiff_xZ
+stick_leg1Z
+stick_leg2Z
+stick_arm1Z
+stick_arm2r   rq   r   rN   z   s8    
+
+
+  ÿ
+zgame.narrationc           
+   	      sÆ   |  ¡  |  ¡  ˆ  d¡ t t¡}|jdddd tj|ddd‡ ‡‡‡fd	d
+„d}|jddd tj|ddd‡ ‡‡‡fdd
+„d}|jddd tj|ddd‡‡‡fdd
+„d}	|	jddd d S )NrM   r   TÚn)r   r   r   u   â‰¡é   )r   ro   r8   c                      s   ˆ  ˆ ˆˆ¡S r$   )Ú
+menu_popupr   ©r   r(   r   rS   r   r   r*   «   r+   z&game.main_game_start.<locals>.<lambda>)r   r"   r   r,   rF   )r6   r   ÚChoicesr   )r   r   r8   c                      s   ˆ  ˆˆˆ ¡S r$   )Úincident_popupr   rx   r   r   r*   ¯   r+   rH   zYears Later...c                      s   ˆ  ˆ ˆ¡S r$   )Ú	next_yearr   )r(   r   rS   r   r   r*   ³   r+   )rY   rs   r   r-   r.   r/   r1   )
+r   rr   rR   r   r(   rS   Z
+game_frameZmenu_BTNZchoices_BTNZyear_BTNr   rx   r   rp   ¡   s"    
+
+ÿÿÿzgame.main_game_startc                 C   s0   |  dd¡ dtd< d| d¡ | d¡d< d S )Nr<   rv   r   r   zAge : r   )rX   Úcountr[   Únametowidget)r   r(   rS   r   r   r   r{   ¶   s    zgame.next_yearc                 C   s  |  d¡}|  d¡}|  d¡}tt| d¡ƒd d ƒ|  d¡d< ttt| d¡ƒd ƒd d ƒ|  d	¡d< tt| d
+¡ƒd d ƒ|  d¡d< tt| d¡ƒd d ƒ|  d¡d< d| d¡ |  d¡d< d| d
+¡ |  d
+¡d< d| d¡ |  d¡d< d S )Nr=   Zbar_stats_framehealthZbar_stats_frameenergyr9   rD   rE   Zkarmabargreenr"   Zkarmabarredr:   Z	energybarr;   Z	healthbarzHealth: r   zEnergy: zkarma: )r}   r^   r[   r_   )r   rS   r(   ÚframeZframehealthZframeenergyr   r   r   Úrefresh_statsbar»   s    
+
+
+$,$$zgame.refresh_statsbarc           	   	      s  t  |¡‰ˆ d¡ ˆ ¡  ˆ d¡ t  ˆ¡}|jddd dddd	d
+ddddg	}d}|D ]´}| |¡d dkrÎt  |¡}|jddd t j||| 	¡ ddd}|f‡ ‡‡‡fdd„	|d< |jdddd q\t j||| 	¡ ddd}|f‡ ‡‡‡fdd„	|d< |jdddd q\d S )Nz	Main Menur   r   Tr   r   r   r   Zworkr   ZhouseZsportZstatsZsuicideÚ é   r   r   )r   é   )r4   r   r"   r   c                    s   ˆ  ˆ| ˆ ˆ¡S r$   ©Úmenu_sub_popup©Úmenu_list_BTN©r(   Úpopupr   rS   r   r   r*   Ú   s    ÿz!game.menu_popup.<locals>.<lambda>r,   rF   )r6   r   r   c                    s   ˆ  ˆ| ˆ ˆ¡S r$   rƒ   r…   r‡   r   r   r*   à   s    ÿrH   )
+r   ÚToplevelr	   Úgrab_setr
+   r-   r/   Úindexr1   r]   )	r   r   r(   rS   Z
+menu_frameZ	menu_listr~   Zmenu_list_itemr†   r   r‡   r   rw   É   s,    
+
+
+
+
+ÿÿzgame.menu_popupc                    sº  t ˆ d¡ƒ}| d¡}t |¡}| | d¡¡ | ¡  | d¡ t |¡‰ ˆ j	ddd d| d¡krâd}t
+d	  d
+7  < t
+d	 dk r$|dkrºt ˆ d¡ƒdkrºˆ dd¡ d
+}nj|dkræt ˆ d¡ƒdkræˆ dd¡ d
+}n>|dkrt ˆ d¡ƒdkrˆ dd¡ d
+}n|dk r$d
+}|d
+krŒˆ dd¡ tjˆ ddd}	|	j	dddd tjˆ dttˆ d¡ƒƒ dd}
+|
+j	ddd  nRt
+d	 dkr¾tjˆ d!d"d}	|	j	dddd#d$ n tjˆ d%d"d}	|	j	dddd nÀd&| d¡kr„d}t
+d'  d
+7  < t
+d' d(k rd
+}|d
+krPˆ dd¡ tjˆ d)dd}	|	j	dddd n0t
+d' dkr¢tjˆ d*d"d}	|	j	dddd#d$ nd+| d¡kr d}t ˆ d¡ƒd,kr|t
+d-  d
+7  < t
+d- d
+krÎd
+}|d
+krtjˆ d.d/d}	|	j	dddd tjˆ d0dd}	|	j	dddd n`tjˆ d1dd}	|	j	dd2dd tjˆ d3dd}	|	j	dd2dd tjˆ d4dd}	|	j	dd2dd n tjˆ d5d6d}	|	j	dddd nd7| d¡krôtjˆ d8d/d9d:}	|	j	dddd tjˆ d0dd}	|	j	dddd n®d;| d¡kr¢t
+d< dkr¢tjˆ d=d>d‡ ‡‡fd?d@„dA}	|	j	dddd tjˆ dBdCd‡ ‡‡fdDd@„dA}	|	j	dddd tjˆ dEdFd‡ ‡‡fdGd@„dA}	|	j	dddd | dHˆ |ˆ¡¡ d S )INr<   r   r   r   Tr   ZEatr   r   r   é   ÚmoneyrB   éûÿÿÿr#   iñÿÿÿr   rm   iÎÿÿÿr:   rv   z
+Energy: +3r   r   ru   é–   Útop©r   r   r6   z
+Money: - $rK   r   r   z(You are FULL and you can not eat anymorerJ   r   )r   r   r6   r   z3You are BROKE and you can not affort to eat anymoreZSleepr   é   zEnergy: +10zYou slept too muchZMarriageé   r   zCongratulations!!!!)r   ro   zMarried to AmandazStatus: MarriedrD   zWife: AmandazKids: Tom and Jerryz*You are UNDERAGE!!! too young for Marriagerb   ZWorkzJYou Signed on as a Competent and strong minded cyber expert in the SAF!!!!rc   )r   r   rd   ZCarr   úToyota AltisÚc1c                      s   ˆ  dˆˆ d¡S )Ni † r”   ©Úcarpricer   ©Úmenu_sub_framer(   r   r   r   r*   N  r+   z%game.menu_sub_popup.<locals>.<lambda>)r   r4   r   r,   úMercedes Benz A200Úc2c                      s   ˆ  dˆˆ d¡S )NiĞ rš   r–   r   r˜   r   r   r*   Q  r+   úAston Martin VantageÚc3c                      s   ˆ  dˆˆ d¡S )Ni ¡ rœ   r–   r   r˜   r   r   r*   T  r+   ZWM_DELETE_WINDOW)r^   r[   Zcgetr   r‰   r	   rŠ   r
+   r-   r/   r|   rX   r0   ÚstrÚfloatr1   Zprotocolr   )r   rˆ   r†   r(   rS   r<   Zmenu_list_textr„   ZflagZtextlabel_energyZtextlabel_moneyr   r˜   r   r„   ä   s¬    
+
+
+
+
+
+şÿ
+ÿ
+   zgame.menu_sub_popupc                 C   sº   |  d¡ ¡  |  d¡ ¡  |  d¡ ¡  tj|dtt| d¡ƒƒ d}|jddd	d
+ t| d¡ƒ|kr˜dt	d< tj|d| d}|jddd	d
+ ntj|dd}|jddd	d
+ d S )Nr•   r›   r   zYou have $ r   ri   ru   r   r   r‘   r   r   zYou have bought a z>You have insufficient amount of money to purchase this vehicle)
+r}   rY   r   r0   r   rŸ   r[   r/   r^   r|   )r   Úvaluer(   r™   r   Zlabelr   r   r   r—   l  s     zgame.carpricec                 C   s†   t  |¡}| d¡ | ¡  | d¡ t j|ddd}| ¡  t j|ddd}|jd	d
+ddd t j|ddd}|jdd
+ddd d S )Nry   Z500x300r€   r   r   ZYesrC   )r   r?   rF   r   TrK   )r6   r   r   r   ZNorG   rH   )r   r‰   r	   rŠ   r
+   r0   r/   r1   )r   r(   rS   r   r„   Z	descLabelZ	yesbuttonZnobuttonr   r   r   rz   |  s    
+
+
+zgame.incident_popupc                 C   sœ  d}d}d}d}d}d}d}d}d}	d}
+d}d}d}t  d|¡ t  dd¡ t jdd	d
+}tt|ƒƒD ]}|j| d  d¡}t|d ƒ}t|d ƒ}||k rf||krft|j| d ƒt	krfdt	|j| d ƒkrì|t|j| d ƒ }n&dt	|j| d ƒkr||	krd}dt	|j| d ƒkrB|t|j| d ƒ }n.dt	|j| d ƒkrp|t
+|j| d ƒ }dt	|j| d ƒkr |t|j| d ƒ }n&dt	|j| d ƒkrÆ||
+krÆd}dt	|j| d ƒkrö|t|j| d ƒ }n&dt	|j| d ƒkr||krd}dt	|j| d ƒkrL|t|j| d ƒ }qfdt	|j| d ƒkrf|dkrfd}qft|ƒ t|ƒ t|ƒ t|ƒ t|ƒ d S )Né   r   rD   i@  zdisplay.widthzdisplay.max_columnsé   z
+scene.xlsxZscene)Z
+sheet_nameú-r   r   rv   r’   rB   é   é   )ÚpdZ
+set_optionZ
+read_excelÚrangeÚlenZilocÚsplitr^   Útyper   rŸ   Úprint)r   r<   Z	age_lowerZ
+age_higherr:   r;   r   ZIQr9   Zenergy_limitZhealth_limitZIQ_limitZkarma_limitZdesired_widthZdfra   Z	split_ager   r   r   ÚmaxŒ  sf    
+
+
+zgame.maxN)Ú__name__Ú
+__module__Ú__qualname__r   r2   r%   rN   rp   r{   r   rw   r„   r—   rz   r¬   r   r   r   r   r      s   H' 	r   )Ú__doc__r   ÚrandomÚPlayerr|   r   r   r   r   r   Ú<module>   s
+   

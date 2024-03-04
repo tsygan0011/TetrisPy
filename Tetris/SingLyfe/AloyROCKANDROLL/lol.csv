@@ -1,0 +1,93 @@
+Age,Category,,Description,Option,Requirement,Energy,Money,Health,IQ,Karma
+0-6,Childhood,,Oh look! Your family has presented you with few items,,,,,,,
+0-6,Childhood,,Oh look! Your family has presented you with few items,,,,,,,
+0-6,Childhood,,Oh look! Your family has presented you with few items,,,,,,,
+0-6,Childhood,,Oh look! Your family has presented you with few items,,,,,,,
+7-12,Primary School,,Today is the CCA Fair,,,,,,,
+7-12,Primary School,,Today is the CCA Fair,,,,,,,
+7-12,Primary School,,Today is the CCA Fair,,,,,,,
+7-12,Primary School,,Today is the CCA Fair,,,,,,,
+7-12,Primary School,,Today is the CCA Fair,,,,,,,
+7-12,Primary School,,Today is the CCA Fair,,,,,,,
+7-12,Primary School,,Today is your friend's ASHOK BALAJIBAI birthday and you are going to his birthday party. Will you get a present along the way?,Yes,,-15,-20,0,0,0
+7-12,Primary School,,Today is your friend's ASHOK BALAJIBAI birthday and you are going to his birthday party. Will you get a present along the way?,No,,-15,0,0,0,0
+7-12,Primary School,,Tempted to purchase a $400 carbon fiber mouse,,,,,,,
+7-12,Primary School,,Tempted to purchase a $400 carbon fiber mouse,,,,,,,
+7-12,Primary School,,Your besties Tiger,,,,,,,
+7-12,Primary School,,Your besties Tiger,,,,,,,
+7-12,Primary School,,Saw your friend,,,,,,,
+7-12,Primary School,,Saw your friend,,,,,,,
+7-12,Primary School,Compulsory,PSLE EXAM :  Jim bought some chocolates and gave half of them to Ken. Ken bought some sweets and gave half of them to Jim. Jim ate 12 sweets and Ken ate 18 chocolates. The ratio of Jim's sweets to chocolates becomes 1:7 and the ratio of Ken's sweets to chocolates becomes 1:4. How many sweets did Ken buy?,68,,-5,0,0,30,0
+7-12,Primary School,Compulsory,PSLE EXAM :  Jim bought some chocolates and gave half of them to Ken. Ken bought some sweets and gave half of them to Jim. Jim ate 12 sweets and Ken ate 18 chocolates. The ratio of Jim's sweets to chocolates becomes 1:7 and the ratio of Ken's sweets to chocolates becomes 1:4. How many sweets did Ken buy?,44,,-5,0,0,-10,0
+7-12,Primary School,Compulsory,PSLE EXAM :  Jim bought some chocolates and gave half of them to Ken. Ken bought some sweets and gave half of them to Jim. Jim ate 12 sweets and Ken ate 18 chocolates. The ratio of Jim's sweets to chocolates becomes 1:7 and the ratio of Ken's sweets to chocolates becomes 1:4. How many sweets did Ken buy?,58,,-5,0,0,-10,0
+7-12,Primary School,Compulsory,Congrats on passing your PSLE. Choose your secondary school.,Admiralty Secondary School,IQ,,,,,
+7-12,Primary School,Compulsory,Congrats on passing your PSLE. Choose your secondary school.,River Valley Secondary School,IQ,,,,,
+7-12,Primary School,Compulsory,Congrats on passing your PSLE. Choose your secondary school.,Holy Innocent Secondary School,IQ,,,,,
+7-12,Primary School,Compulsory,Congrats on passing your PSLE. Choose your secondary school.,Manjusri Secondary School,IQ,,,,,
+13-16,Secondary School,,Today is the CCA Fair,,,,,,,
+13-16,Secondary School,,Today is the CCA Fair,,,,,,,
+13-16,Secondary School,,Today is the CCA Fair,,,,,,,
+13-16,Secondary School,,Today is the CCA Fair,,,,,,,
+13-16,Secondary School,,Today is the CCA Fair,,,,,,,
+13-16,Secondary School,,Today is the CCA Fair,,,,,,,
+13-16,Secondary School,,You got a trash score in your recent Physics test and your form teacher has arranged a remedial class. Will you go?,Yes,,0,0,0,5,0
+13-16,Secondary School,,You got a trash score in your recent Physics test and your form teacher has arranged a remedial class. Will you go?,No,,0,0,0,-5,0
+13-16,Secondary School,,Annual Sports Day is here,,,,,,,
+13-16,Secondary School,,Annual Sports Day is here,,,,,,,
+13-16,Secondary School,,While you were making your way to school,,,,,,,
+13-16,Secondary School,,While you were making your way to school,,,,,,,
+13-16,Secondary School,,Exams are coming and you are studying hard for your physics subject. So heres a question. Enoch bought a old metal lamp,,,,,,,
+13-16,Secondary School,,Exams are coming and you are studying hard for your physics subject. So heres a question. Enoch bought a old metal lamp,,,,,,,
+13-16,Secondary School,,Exams are coming and you are studying hard for your physics subject. So heres a question. Enoch bought a old metal lamp,,,,,,,
+13-16,Secondary School,Compulsory,O-LEVEL EXAM : ,,,0,0,0,0,0
+13-16,Secondary School,Compulsory,O-LEVEL EXAM : ,,,0,0,0,0,0
+13-16,Secondary School,Compulsory,O-LEVEL EXAM : ,,,0,0,0,0,0
+13-16,Secondary School,Compulsory,Congrats on passing your O-Levels. Choose your tertiary institute.,Catholic Junior College,IQ,,,,,
+13-16,Secondary School,Compulsory,Congrats on passing your O-Levels. Choose your tertiary institute.,PeePee Polytechnic,IQ,,,,,
+13-16,Secondary School,Compulsory,Congrats on passing your O-Levels. Choose your tertiary institute.,Temasek Junior College,IQ,,,,,
+13-16,Secondary School,Compulsory,Congrats on passing your O-Levels. Choose your tertiary institute.,Rich Kid Junior College,IQ,,,,,
+13-16,Post-Secondary School,,Holiday is here,,,,,,,
+13-16,Post-Secondary School,,Holiday is here,,,,,,,
+17-18,JC,,Skip class for KPOP IU concert,Yes,,-20,-400,0,0,0
+17-18,JC,,Skip class for KPOP IU concert,No,,0,0,0,0,0
+17-18,JC,,Join Xu Kai in basketball?,Yes,,-15,0,5,0,0
+17-18,JC,,Join Xu Kai in basketball?,No,,0,0,-15,0,0
+17-18,JC,,Your class nerd,,,,,,,
+17-18,JC,,Your class nerd,,,,,,,
+17-18,JC,,A-LEVEL EXAM : Which compounds would likely undergo a nucleophilic addition reaction?,Ethene,,0,0,0,-20,0
+17-18,JC,,A-LEVEL EXAM : Which compounds would likely undergo a nucleophilic addition reaction?,Ethanal,,0,0,0,30,0
+17-18,JC,,A-LEVEL EXAM : Which compounds would likely undergo a nucleophilic addition reaction?,Benzene,,0,0,0,-20,0
+17-19,Polytechnic,,Poly semester is about to start,,,,,,,
+17-19,Polytechnic,,Poly semester is about to start,,,,,,,
+17-19,Polytechnic,,Your friends invited you to catch a blockbuster movie,,,,,,,
+17-19,Polytechnic,,Your friends invited you to catch a blockbuster movie,,,,,,,
+17-19,Polytechnic,,Mid-term assessment is here,,,,,,,
+17-19,Polytechnic,,Mid-term assessment is here,,,,,,,
+17-19,Polytechnic,,"FINAL SEMESTER EXAMS : Find how many for-loops is needed to attain the value of ""Apple/Banana/Coke"".  Note : No hardcoding ONLY through the usage of loops with NO other usage of build-in functions   choice = [",,,,,,,
+,,,,,,,,,,
+    {'0-6':,,,,,,,,,,
+         {'Please Choose an Item':,,,,,,,,,,
+              {'Book': '0,,,,,,,,,,
+               'Basketball': '20,,,,,,,,,,
+               'Knife': '0,,,,,,,,,,
+"          }}]""",4,,0,0,0,30,0,,,
+17-19,Polytechnic,,"FINAL SEMESTER EXAMS : Find how many for-loops is needed to attain the value of ""Apple/Banana/Coke"".  Note : No hardcoding ONLY through the usage of loops with NO other usage of build-in functions   choice = [",,,,,,,
+,,,,,,,,,,
+    {'0-6':,,,,,,,,,,
+         {'Please Choose an Item':,,,,,,,,,,
+              {'Book': '0,,,,,,,,,,
+               'Basketball': '20,,,,,,,,,,
+               'Knife': '0,,,,,,,,,,
+"          }}]""",5,,0,0,0,-30,0,,,
+17-19,Polytechnic,,"FINAL SEMESTER EXAMS : Find how many for-loops is needed to attain the value of ""Apple/Banana/Coke"".  Note : No hardcoding ONLY through the usage of loops with NO other usage of build-in functions   choice = [",,,,,,,
+,,,,,,,,,,
+    {'0-6':,,,,,,,,,,
+         {'Please Choose an Item':,,,,,,,,,,
+              {'Book': '0,,,,,,,,,,
+               'Basketball': '20,,,,,,,,,,
+               'Knife': '0,,,,,,,,,,
+"          }}]""",3,,0,0,0,-30,0,,,
+17-19,Polytechnic,,,,,,,,,
+17-19,Polytechnic,,,,,,,,,
+17-19,Polytechnic,,,,,,,,,
+17-19,Polytechnic,,,,,,,,,

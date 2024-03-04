@@ -1,0 +1,8 @@
+U
+    aª  ã                   @   s   d Z G dd„ dƒZdS )zK
+
+c                   @   s4   e Zd Zdd„ Zdd„ Zdd„ Zdd„ Zd	d
+„ ZdS )ÚSwitchc                    s"   d‰ t | dt|ƒ ‡ fdd„ƒƒ S )NzInvalid OptionZrate_c                      s   ˆ S )N© r   ©Údefaultr   ú;C:\Users\MaxOng\Desktop\Python-Mini-Project\Cleon\Helper.pyÚ<lambda>   ó    z!Switch.get_rate.<locals>.<lambda>)ÚgetattrÚstr)ÚselfÚindexr   r   r   Úget_rate	   s    zSwitch.get_ratec                 C   s   dS )Ngffffffö?r   ©r
+   r   r   r   Úrate_1   s    zSwitch.rate_1c                 C   s   dS )Ng      ø?r   r   r   r   r   Úrate_2   s    zSwitch.rate_2c                 C   s   dS )Ng      ü?r   r   r   r   r   Úrate_3   s    zSwitch.rate_3c                 C   s   dS )Ng       @r   r   r   r   r   Úrate_4   s    zSwitch.rate_4N)Ú__name__Ú
+__module__Ú__qualname__r   r   r   r   r   r   r   r   r   r      s
+   r   N)Ú__doc__r   r   r   r   r   Ú<module>   s   

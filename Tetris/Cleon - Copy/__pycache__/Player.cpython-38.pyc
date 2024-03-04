@@ -1,0 +1,27 @@
+U
+    3la‚  ã                   @   s,   d Z ddlZG dd„ dƒZG dd„ dƒZdS )zK
+
+é    Nc                
+   @   s–   e Zd Zddddddddd	d
+g
+Zddddddddddg
+ZddgZdddddgZdZdd„ Zdd„ Z	dd„ Z
+dd„ Zdd„ Zdd „ Zd!d"„ Zd#d$„ ZdS )%ÚPlayerÚnameÚgenderÚageÚenergyÚmoneyÚhealthÚiqÚkarmaÚ
+time_limitÚ
+difficultyNéc   éd   r   é   é´   g333333ó?g      ø?gš™™™™™ı?é   c                 C   s   | j d kr|| _t| _ d S ©N)Ú_Player__instanceÚpersonalisationr   )Úselfr   © r   úD\\fileserver\mdec\MiniProject(TeamFolders)\Team Aloy\Cleon\Player.pyÚ__init__   s    
+zPlayer.__init__c                 C   s2   | j D ]&}||krt| j| j  |¡ ƒ  S qd S r   )Ú	variablesÚstrr   Úindex©r   Úvar_nameÚvarr   r   r   Ú	get_value$   s    
+zPlayer.get_valuec                 C   s²   |dks¤| j D ]’}||kr| j| j  |¡ }|| }|dkr^||  |¡k r^|| j| j  |¡< q|dkrzd| j| j  |¡< q||  |¡kr|  |¡| j| j  |¡< qn
+|| jd< d S )Nr   r   )r   r   r   Úget_value_limit)r   r   Úamtr   Zcur_amt_for_varZnew_amt_for_varr   r   r   Ú	set_value*   s    
+zPlayer.set_valuec                 C   s.   | j D ]"}||kr| j| j  |¡   S qd S r   ©r   Úvariables_limitr   r   r   r   r   r    B   s    
+zPlayer.get_value_limitc                 C   sL   | j D ]@}||kr| j| j  |¡ }|| }|dkr|| j| j  |¡< qd S )Nr   r#   )r   r   r!   r   Úcur_limit_for_varÚnew_limit_for_varr   r   r   Úset_value_limitH   s    
+zPlayer.set_value_limitc                 C   s8   | j d }| jD ]"}||kr| j| j |¡   S qd S )Nr   )r   Ú	age_ranger   )r   r   ZagesÚranger   r   r   Úget_age_in_rangeS   s    
+
+zPlayer.get_age_in_rangec                 C   s¬   | j d }d}| jD ]d}|| jd krl||  krL| j| j |¡d  krxn qxtj t ¡ | j |¡¡}qtdƒ  qzqd}|dkrŒd}n|dkr˜d}|| j|< | j| S )Nr   r   ztoo young boyéÿÿÿÿr   r   )r   r(   r   ÚhelperZSwitchZget_rateÚprintÚvariables_rate)r   r   r   Úrater)   r   r   r   r   Úget_rate_of_consumptionZ   s    
+
+*
+zPlayer.get_rate_of_consumptionc                 C   sˆ   | j d }| jD ]j}||kr| j| j |¡ }| j | j |¡ |  |¡|  |¡  }t|| ƒ}|dkr|| j| j |¡< qtdƒ d S )Nr   r   z--------)r   r   r$   r   r*   r0   Úroundr-   )r   r   r   r   r%   r/   r&   r   r   r   Úset_value_limit_by_agev   s    
+
+ÿzPlayer.set_value_limit_by_age)Ú__name__Ú
+__module__Ú__qualname__r   r$   r.   Zvariables_rate_optionsr   r   r   r"   r    r'   r*   r0   r2   r   r   r   r   r      s   r   c                   @   s    e Zd Zg Zdd„ Zdd„ ZdS )Ú
+Activitiesc                 C   s   d S r   r   )r   r   r   r   Úload_activities   s    zActivities.load_activitiesc                 C   s   d S r   r   )r   Ú
+activitiesr   r   r   Úget_activity“   s    zActivities.get_activityN)r3   r4   r5   r8   r7   r9   r   r   r   r   r6   Œ   s   r6   )Ú__doc__ZHelperr,   r   r6   r   r   r   r   Ú<module>   s   

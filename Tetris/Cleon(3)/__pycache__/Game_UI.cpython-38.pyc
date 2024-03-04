@@ -1,0 +1,256 @@
+U
+    è™aPŒ  ã                   @   sF   d Z ddlZddlZddlZddlZddddddœZG dd„ dƒZdS )z8
+
+é    NÚ )ÚeatÚsleepÚmarriageÚcarÚhousec                   @   s”   e Zd Zdd„ Zdd„ Zdd„ Zdd„ Zd	d
+„ Zdd„ Zdd„ Z	dd„ Z
+dd„ Zdd„ Zdd„ Zdd„ Zdd„ Zdd„ Zdd„ Zdd „ Zd!d"„ Zd#S )$Úgamec                 C   s,   t  ¡ }| d¡ | d¡ | dd¡ |S )NZSingLifeÚ500x700F)ÚtkinterZTkÚtitleÚgeometryZ	resizable©Úselfr   © r   ú<C:\Users\MaxOng\Desktop\Python-Mini-Project\Cleon\Game_UI.pyÚ
+start_game   s
+    
+
+zgame.start_gamec                    sŞ   t  ˆ ¡atjddd ˆ  d‡ ‡fdd„¡ t  t¡‰ˆjddd t jˆdd	d
+}|jddd t jˆddd	d‰ˆjddd t jˆdddd	d}|jddd t jˆdddd	‡ ‡‡‡‡fdd„d}|jddd d S )NÚbothT©ÚfillÚexpandz<Return>c                    s   ˆ  | ˆ d¡S )NÚhealth©Úpopup_death©Úe©r   r   r   r   Ú<lambda>   ó    z#game.start_window.<locals>.<lambda>ÚxzPlease Enter Your Name...©ÚArialé   ©ÚtextÚfontÚcenteré
+   ©ÚanchorÚpadyé   é   )ÚheightÚwidthr$   é   zGender: Male)r,   r-   r#   r$   ZConfirmc                      s   ˆ  ˆˆˆ ˆ¡S ©N)Ústart_stats_windowr   ©r   Úname_TBÚplayerr   Ústart_window_framer   r   r   1   r   )r,   r-   r#   r$   Úcommand)r
+   ÚFrameÚgame_windowÚpackÚbindÚLabelZTextÚButton)r   r   r3   Zname_LBLZ
+gender_LBLZ
+submit_BTNr   r1   r   Ústart_window   s    
+
+ÿzgame.start_windowc                    sJ  |  dd¡ ¡ }| ¡ rFˆ d|¡ | ¡  t t¡‰ˆjddd t t¡‰ˆjdddd ˆj	D ]¢}ˆ 
+|¡ |dkr´tjˆd	ˆ 
+|¡ ¡  ¡  d
+ dd}|jddd qf|dkròtjˆ| ¡ d ˆ 
+|¡ ¡  dd}|jddd qf|dkrP|dkrP|dkrP|dkrPtjˆ| ¡ d ˆ 
+|¡ ¡  dd}|jddd qf|dkr’tjˆd| ¡ d ˆ 
+|¡ ¡  dd}|jddd qf|dkrrtjˆdddd}	|	jddd tj|	|| ¡ d ˆ 
+|¡ ¡  dd}
+|
+jdd d d! tj|	d"|d# ttˆ 
+|¡ƒd$ d% ƒd&}|jd'd d( tj|	d)|d* tttˆ 
+|¡ƒd$ ƒd$ d% ƒd&}|jd+d d( qftjˆd| ddd}	|	jddd tj|	|| ¡ d ˆ 
+|¡ ¡  dd}
+|
+jdd d d! tj|	d"|d, ttˆ 
+|¡ƒd$ d% ƒd&}|jdd d d! qftjˆd-d.d‰ ˆ jd/d0 ˆ d1‡ ‡‡‡‡‡fd2d3„¡ d S )4Nz1.0ÚendÚnamer   Tr   Úbottom©r   r   ÚsideúHello ú!, welcome to SingLife©r    é   Úboldr"   r%   r&   r'   Úmoneyú: $r   ÚkarmaÚenergyr   Úageú: ©r>   r#   r$   Úbar_stats_frameÚgrayé  ©r>   Úbgr-   Ú10©r   ÚpadxÚwé   ©r(   r)   rU   ÚgreenÚbargreenéd   éF   ©rR   r>   r-   Úleft©rA   r)   ÚredÚbarredÚrightÚbarúClick anywhere to continue...©r    r&   Ús©r(   ú
+<Button-1>c                    s   ˆ  ˆˆ ˆˆˆ¡S r/   )Ú	narrationr   ©Úclick_continuer   r3   r   Úwindow_frame_bottomÚwindow_frame_topr   r   r      r   z)game.start_stats_window.<locals>.<lambda>)ÚgetÚstripÚisalphaÚ	set_valueÚdestroyr
+   r6   r7   r8   Ú	variablesÚ	get_valuer:   Ú__str__Ú
+capitalizeÚintÚabsr9   )r   r4   r2   r   r3   r>   ÚiÚ	title_LBLÚ	stats_LBLrN   Úbar_stats_LBL_textÚbar_stats_LBL_leftÚbar_stats_LBL_rightÚbar_stats_LBLr   rj   r   r0   4   s”    
+
+
+
+ÿÿşüş(ş
+ş
+şÿ ÿÿşÿÿzgame.start_stats_windowc              	      sb  |  ¡  ˆ   ¡  ˆ d¡ t t¡‰ˆjddd d}tjˆdd|dd	d
+}|jddd t t¡}|jdddddd |j	ddˆ 
+d¡ ¡ d d}	d}
+| |	|
+d |	|
+¡}d}| |	|
+|	| |
+d ¡}| |	|
+|	| |
+d ¡}d}
+| |	|
+|	d |
+d ¡}| |	|
+|	d |
+d ¡}|jddd tjˆd d!d"‰ ˆ jdd# ˆ d‡ ‡‡‡‡‡fd$d%„¡ d S )&Nrh   r   Tr   zÃI am born as a Male in Singapore. I am the beautiful creation from the sensational event that my parent had that night. My life starts now......
+
+Disclaimer: This whole story line is frictional. rO   r%   ©r    r.   éô  )rR   Zjustifyr#   r$   Ú	wraplengtr&   r'   éá   é-   éª   r[   )r   éx   r>   ©r#   éÅ   é¯   éK   r+   é2   é‘   é   r!   rf   r?   )r(   rA   rd   re   r"   rg   c                    s   ˆ  ˆˆ ˆˆˆ¡S r/   )Úmain_game_startr   ©rk   r   Únarration_framer3   r   rl   r   r   r   ©   r   z game.narration.<locals>.<lambda>)rr   Úunbindr
+   r6   r7   r8   r:   ZCanvasZcreate_ovalZcreate_textrt   rv   Zcreate_liner9   )r   rm   rk   r   rl   r3   Znarrative_textZnarration_frame_LBLZcanvasr   ÚyZstickZdiff_xZ
+stick_leg1Z
+stick_leg2Z
+stick_arm1Z
+stick_arm2r   r   r   ri   ƒ   s<    
+
+
+  ÿ
+ÿzgame.narrationc           
+   	      sÈ   |  ¡  |  ¡  ˆ  d¡ t t¡}|jdddd tj|ddd‡ ‡‡‡fd	d
+„d}|jddd tj|ddd‡ ‡‡‡fdd
+„d}|jddd tj|ddd‡ ‡‡‡fdd
+„d}	|	jddd d S )Nrh   r   TÚn)r   r   r(   u   â‰¡é   )r    r   rF   c                      s   ˆ  ˆ ˆˆ¡S r/   )Ú
+menu_popupr   ©r   r3   r   rl   r   r   r   µ   r   z&game.main_game_start.<locals>.<lambda>)r#   r-   r$   r5   r^   )rA   r(   ÚChoicesr&   )r    r!   rF   c                      s   ˆ  ˆˆˆ ¡S r/   )Úincident_popupr   r–   r   r   r   ¹   r   rb   zYears Later...c                      s   ˆ  ˆˆˆ ¡S r/   )Ú	next_yearr   r–   r   r   r   ½   r   )rr   r‘   r
+   r6   r7   r8   r;   )
+r   r   rk   r   r3   rl   Z
+game_frameZmenu_BTNZchoices_BTNZyear_BTNr   r–   r   r   «   s"    
+
+ÿÿÿzgame.main_game_startc                 C   s:   |  dd¡ dtd< d| d¡ | d¡d< |  |¡ d S )NrK   r”   r   r   zAge : r#   )rq   Úcountrt   ÚnametowidgetÚlol)r   r3   rl   r   r   r   r   r™   À   s    zgame.next_yearc                 C   s  |  d¡}|  d¡}|  d¡}tt| d¡ƒd d ƒ|  d¡d< ttt| d¡ƒd ƒd d ƒ|  d	¡d< tt| d
+¡ƒd d ƒ|  d¡d< tt| d¡ƒd d ƒ|  d¡d< d| d¡ |  d¡d< d| d
+¡ |  d
+¡d< d| d¡ |  d¡d< d S )NrN   Zbar_stats_framehealthZbar_stats_frameenergyrI   r[   r\   Zkarmabargreenr-   ZkarmabarredrJ   Z	energybarr   Z	healthbarzHealth: r#   zEnergy: zkarma: )r›   rw   rt   rx   )r   rl   r3   ÚframeZframehealthZframeenergyr   r   r   Úrefresh_statsbarÆ   s    
+
+
+$,$$zgame.refresh_statsbarc           	         sÈ  t  ˆ ¡‰ˆ d¡ ˆ ¡  ˆ d¡ t  ˆ¡}|jddd dddd	d
+dddg}d}|D ]f}| |¡d dkrĞt  |¡}|jddd t j||| 	¡ ddd}|f‡ ‡‡‡‡fdd„	|d< |jdddd qZ|dkrt j||| 	¡ ddd}|f‡ ‡fdd„	|d< |jdddd qZ|d	kr~t
+ˆ d¡ƒdkrÂt j||| 	¡ ddd}|f‡ ‡‡‡‡fdd„	|d< |jdddd qZt j||| 	¡ ddd}|f‡ ‡‡‡‡fdd„	|d< |jdddd qZd S )Nz	Main Menur	   r   Tr   r   r   r   Zworkr   r   ÚstatsÚsuicider   é   r   r&   )r    é   )r>   r#   r-   r$   c                    s   ˆ  ˆ| ˆˆˆ ¡S r/   ©Úmenu_sub_popup©Úmenu_list_BTN©r   r3   Úpopupr   rl   r   r   r   å   s   ız!game.menu_popup.<locals>.<lambda>r5   r^   )rA   r   r   c                    s   ˆ  dˆ d¡S )NÚ1r    r   r¥   r   r   r   r   í   r   rb   r   r.   c                    s   ˆ  ˆ| ˆˆˆ ¡S r/   r£   r¥   r§   r   r   r   ó   s   ıc                    s   ˆ  ˆ| ˆˆˆ ¡S r/   r£   r¥   r§   r   r   r   û   s   ı)r
+   ÚToplevelr   Úgrab_setr   r6   r8   Úindexr;   rv   rw   rt   )	r   r   r3   rl   Z
+menu_frameZ	menu_listr   Zmenu_list_itemr¦   r   r§   r   r•   Ô   sF    
+
+
+
+
+
+ÿ
+ÿ
+ÿÿzgame.menu_popupc                    sN  t ˆ d¡ƒ}| d¡}t |¡}| | d¡¡ | ¡  | d¡ t |¡‰ ˆ j	ddd d| d¡krâd}	t
+d	  d
+7  < t
+d	 dk r$|dkrºt ˆ d¡ƒdkrºˆ dd¡ d
+}	nj|dkræt ˆ d¡ƒdkræˆ dd¡ d
+}	n>|dkrt ˆ d¡ƒdkrˆ dd¡ d
+}	n|dk r$d
+}	|	d
+krŒˆ dd¡ tjˆ ddd}
+|
+j	dddd tjˆ dttˆ d¡ƒƒ dd}|j	ddd  nRt
+d	 dkr¾tjˆ d!d"d}
+|
+j	dddd#d$ n tjˆ d%d"d}
+|
+j	dddd nDd&| d¡kr„d}	t
+d'  d
+7  < t
+d' d(k rd
+}	|	d
+krPˆ dd¡ tjˆ d)dd}
+|
+j	dddd n0t
+d' dkr&tjˆ d*d"d}
+|
+j	dddd#d$ n¢d+| d¡kr d}	t ˆ d¡ƒd,kr|t
+d-  d
+7  < t
+d- d
+krÎd
+}	|	d
+krtjˆ d.d/d}
+|
+j	dddd tjˆ d0dd}
+|
+j	dddd n`tjˆ d1dd}
+|
+j	dd2dd tjˆ d3dd}
+|
+j	dd2dd tjˆ d4dd}
+|
+j	dd2dd n tjˆ d5d6d}
+|
+j	dddd n†d7| d¡krRtjˆ d8d/d9d:}
+|
+j	dd2dd tjˆ d;dd}
+|
+j	dddd ˆ dd<¡ t ˆ d¡ƒdkr ˆ dd¡ n.ˆ d=d¡ t ˆ d=¡ƒdkr&ˆ d>|d=¡ nÔd?| d¡kr.t
+d@ d>krtjˆ dAdBd‡ ‡‡fdCdD„dE}
+|
+j	dddd tjˆ dFdGd‡ ‡‡fdHdD„dE}
+|
+j	dddd tjˆ dIdJd‡ ‡‡fdKdD„dE}
+|
+j	dddd n*tjˆ dLt
+d@  dJddM}
+|
+j	dddd nødN| d¡kr
+t
+dO d>krŞtjˆ dPdBd‡ ‡‡fdQdD„dE}
+|
+j	dddd tjˆ dRdGd‡ ‡‡fdSdD„dE}
+|
+j	dddd tjˆ dTdJd‡ ‡‡fdUdD„dE}
+|
+j	dddd n*tjˆ dLt
+dO  dJddM}
+|
+j	dddd ndV| d¡kr&ˆ ˆˆ ¡ dW| d¡krJ| dXˆ |ˆ¡¡ d S )YNrK   r#   r	   r   Tr   ZEatr   r   r*   é   rG   rW   éûÿÿÿr.   iñÿÿÿr!   r‹   iÎÿÿÿrJ   r”   z
+Energy: +3r   r"   r“   é–   Útop©r(   r)   rA   z
+Money: - $rf   r&   r'   z(You are FULL and you can not eat anymorere   r   )r(   r)   rA   r   z3You are BROKE and you can not affort to eat anymoreZSleepr   é   zEnergy: +10zYou slept too muchZMarriageé   r   zCongratulations!!!!)r    r   zMarried to AmandazStatus: Marriedr[   zWife: AmandazKids: Tom and Jerryz*You are UNDERAGE!!! too young for Marriager€   ZWorkzJYou Signed on as a Competent and strong minded cyber expert in the SAF!!!!r   )r#   r$   r‚   zCash +$100,000é † r   r   ZCarr   úToyota AltisÚc1c                      s   ˆ  dˆˆ d¡S )Nr´   rµ   ©Úcarpricer   ©Úmenu_sub_framer3   r   r   r   r   z  s   
+ÿz%game.menu_sub_popup.<locals>.<lambda>)r#   r>   r$   r5   úMercedes Benz A200Úc2c                      s   ˆ  dˆˆ d¡S )NiĞ r»   r·   r   r¹   r   r   r   €  s   
+ÿúAston Martin VantageÚc3c                      s   ˆ  dˆˆ d¡S )Ni ¡ r½   r·   r   r¹   r   r   r   †  s   
+ÿzYou owned a )r#   r>   r$   ZHouser   ÚHDBc                      s   ˆ  dˆˆ d¡S )NiğI r¿   ©Ú
+housepricer   r¹   r   r   r   ’  s   
+ÿÚCondoc                      s   ˆ  dˆˆ d¡S )Nià“ rÂ   rÀ   r   r¹   r   r   r   —  s   
+ÿÚLandedc                      s   ˆ  dˆˆ d¡S )Niğ³ rÃ   rÀ   r   r¹   r   r   r   œ  s   
+ÿZStatsZSuicideZWM_DELETE_WINDOW)rw   rt   Zcgetr
+   rª   r   r«   r   r6   r8   rš   rq   r:   ÚstrÚfloatr   r;   rŸ   Zprotocolr   )r   r¨   r¦   r3   rl   r   rK   Zmenu_list_textr¤   ZflagZtextlabel_energyZtextlabel_moneyr   r¹   r   r¤     s   
+
+
+
+
+
+şÿş
+ÿ
+ÿ şÿ
+ş
+şÿÿÿÿÿzgame.menu_sub_popupc                 C   sº   |  d¡ ¡  |  d¡ ¡  |  d¡ ¡  tj|dtt| d¡ƒƒ d}|jddd	d
+ t| d¡ƒ|kr˜|t	d< tj|d| d}|jddd	d
+ ntj|dd}|jddd	d
+ d S )Nr¶   r¼   r¾   úYou have $ rG   r‡   r“   r¯   r°   r±   r   úYou have bought a z>You have insufficient amount of money to purchase this vehicle©
+r›   rr   r
+   r:   rÄ   rÅ   rt   r8   rw   rš   )r   Úvaluer3   rº   r   Úlabelr   r   r   r¸   ½  s     zgame.carpricec                    s¤   t  ˆ ¡}| d¡ | ¡  | d¡ |dkrht j|dd}| ¡  t j|d‡ ‡fdd„d	}| ¡  n8t j|d
+d}| ¡  t j|d‡ ‡fdd„d	}| ¡  d S )Nr—   Z500x200r    z?You chose to suicide and you lived your life with REGRETS......r‡   zAccept your Deathc                      s
+   ˆ  ˆ ¡S r/   ©rr   r   r   r   r   r   Ø  r   z"game.popup_death.<locals>.<lambda>)r#   r5   z@You chose to live an unhealthy life and died with 0 health......c                      s
+   ˆ  ˆ ¡S r/   rË   r   r   r   r   r   ß  r   ©r
+   rª   r   r«   r   r:   r8   r;   )r   r   r   Útyper¤   rÊ   Zbuttonr   r   r   r   Í  s.    
+
+
+ÿ ÿ
+ÿ ÿzgame.popup_deathc                 C   s   |  ¡  d S r/   rË   r   r   r   r   rr   â  s    zgame.destroyc                 C   sº   |  d¡ ¡  |  d¡ ¡  |  d¡ ¡  tj|dtt| d¡ƒƒ d}|jddd	d
+ t| d¡ƒ|kr˜|t	d< tj|d| d}|jddd	d
+ ntj|dd}|jddd	d
+ d S )Nr¶   r¼   r¾   rÆ   rG   r‡   r“   r¯   r°   r±   r   rÇ   z@You have insufficient amount of money to purchase this apartmentrÈ   )r   rÉ   r3   rº   r   rÊ   r   r   r   rÁ   å  s     ÿzgame.housepricec                 C   s†   t  |¡}| d¡ | ¡  | d¡ t j|ddd}| ¡  t j|ddd}|jd	d
+ddd t j|ddd}|jdd
+ddd d S )Nr—   Ú500x300r   r   r"   ZYesrY   )r#   rR   r^   r   Trf   )rA   r   r   r(   ZNor`   rb   rÌ   )r   r3   rl   r   r¤   Z	descLabelZ	yesbuttonZnobuttonr   r   r   r˜   ö  s    
+
+
+zgame.incident_popupc                 C   sâ  t  |¡}|jddd t  |¡}|jdddd |jD ]¢}| |¡ |dkr†t j|d| |¡ ¡  ¡  d d	d
+}|jddd q8|dkrÄt j|| ¡ d | |¡ ¡  dd
+}|jddd q8|dkr"|dkr"|dkr"|dkr"t j|| ¡ d | |¡ ¡  dd
+}|jddd q8|dkrdt j|d| ¡ d | |¡ ¡  dd}|jddd q8|dkrDt j|dddd}|jddd t j||| ¡ d | |¡ ¡  dd}	|	jdddd t j|d |d! tt| |¡ƒd" d# ƒd$}
+|
+jd%dd& t j|d'|d( tt	t| |¡ƒd" ƒd" d# ƒd$}|jd)dd& q8t j|d| ddd}|jddd t j||| ¡ d | |¡ ¡  dd}	|	jdddd t j|d |d* tt| |¡ƒd" d# ƒd$}|jdddd q8d S )+Nr   Tr   r?   r@   r>   rB   rC   rD   r"   r%   r&   r'   rG   rH   r   rI   rJ   r   rK   rL   rM   rN   rO   rP   rQ   rS   rT   rV   rW   rX   rY   rZ   r[   r\   r]   r^   r_   r`   ra   rb   rc   )
+r
+   r6   r8   rs   rt   r:   ru   rv   rw   rx   )r   r3   Zmenurm   rl   ry   rz   r{   rN   r|   r}   r~   r   r   r   r   rŸ     s~    
+
+
+ÿÿşüş(ş
+ş
+şÿ ÿşÿz
+game.statsc                 C   s¤  t jddd}t |¡}| d¡ | ¡  | d¡ d}d}d}d}d}d}	d}
+d}d}d}d	}d}tt|ƒƒD ],}tj	|t
+|j| d
+ ƒd}| ¡  |j| d  d¡}t|d ƒ}t|d ƒ}||k rp||krpt|j| d
+ ƒt
+krpdt
+|j| d ƒkr|t|j| d ƒ }n&dt
+|j| d ƒkrB||krBd}dt
+|j| d ƒkrr|	t|j| d ƒ }	n.dt
+|j| d ƒkr |	t|j| d ƒ }	dt
+|j| d ƒkrĞ|t|j| d ƒ }n&dt
+|j| d ƒkrö||kröd}dt
+|j| d ƒkr&|
+t|j| d ƒ }
+n&dt
+|j| d ƒkrL|
+|krLd}
+dt
+|j| d ƒkr||t|j| d ƒ }qpdt
+|j| d ƒkrp|dkrpd}qpd S )Nú
+scene.xlsxÚscene©Z
+sheet_nameZScenariorÎ   é   r   r[   r¯   r¡   r‡   ú-r*   r”   r²   rW   é   é   )ÚpdÚ
+read_excelr
+   rª   r   r«   r   ÚrangeÚlenr:   rÄ   Úilocr8   Úsplitrw   rÍ   rÅ   )r   r   Údfr¤   rK   Ú	age_lowerÚ
+age_higherrJ   r   rG   ÚIQrI   Úenergy_limitÚhealth_limitÚIQ_limitÚkarma_limitry   rÊ   Ú	split_ager   r   r   rœ   A  sb    
+
+
+
+
+
+zgame.lolc                 C   sœ  d}d}d}d}d}d}d}d}d}	d}
+d}d}d}t  d|¡ t  dd¡ t jd	d
+d}tt|ƒƒD ]}|j| d  d¡}t|d ƒ}t|d ƒ}||k rf||krft|j| d ƒt	krfdt	|j| d ƒkrì|t|j| d ƒ }n&dt	|j| d ƒkr||	krd}dt	|j| d ƒkrB|t|j| d ƒ }n.dt	|j| d ƒkrp|t
+|j| d ƒ }dt	|j| d ƒkr |t|j| d ƒ }n&dt	|j| d ƒkrÆ||
+krÆd}dt	|j| d ƒkrö|t|j| d ƒ }n&dt	|j| d ƒkr||krd}dt	|j| d ƒkrL|t|j| d ƒ }qfdt	|j| d ƒkrf|dkrfd}qft|ƒ t|ƒ t|ƒ t|ƒ t|ƒ d S )NrÒ   r   r[   r¯   i@  zdisplay.widthzdisplay.max_columnsé   rÏ   rĞ   rÑ   rÓ   r*   r¡   r”   r²   rW   rÔ   rÕ   )rÖ   Z
+set_optionr×   rØ   rÙ   rÚ   rÛ   rw   rÍ   rÄ   rÅ   Úprint)r   rK   rİ   rŞ   rJ   r   rG   rß   rI   rà   rá   râ   rã   Zdesired_widthrÜ   ry   rä   r   r   r   Úmax‰  sf    
+
+
+zgame.maxN)Ú__name__Ú
+__module__Ú__qualname__r   r<   r0   ri   r   r™   r   r•   r¤   r¸   r   rr   rÁ   r˜   rŸ   rœ   rç   r   r   r   r   r      s$   O(- =<Hr   )Ú__doc__r
+   ÚrandomÚPlayerÚpandasrÖ   rš   r   r   r   r   r   Ú<module>   s   
